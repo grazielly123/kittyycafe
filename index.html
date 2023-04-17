@@ -1,0 +1,428 @@
+<body> 
+<input type="checkbox" id="mobile-menu" /> 
+<div class="sidebar">
+ <div class="logo"> 
+ <h2>Kitty cafe</h2> </div> 
+<div class="menu"> <ul> 
+<li> Início</li> 
+<li> Categorias</li> 
+<li> Produtos</li> 
+<li> Carrinho</li> 
+<li> Perfil</li> 
+<li> Configurações</li> 
+<li> Sair</li> 
+</ul> 
+</div> 
+</div> 
+<label for="mobile-menu" id="mmenu"> 
+</label> 
+<div class="content"> 
+<div class="top"> 
+<div class="search"> 
+<input type="text" placeholder="Pesquisar Produto" /> 
+</div> 
+<div class="user">
+
+</div>
+ </div>
+ 
+  <div class="all-products"> 
+<div class="title"> 
+<h2>Todos os produtos</h2> 
+</div> 
+<div class="products"> 
+<div class="product"> 
+</i> <img src="https://www.seoulkoreatour.net/wp-content/uploads/2014/10/hello-kitty-cafe-2.png" alt="cafe" /> 
+<div class="addbutton"> 
+<button class="addtocart">Adicione ao carrinho</button> 
+</div>
+ <div class="subtitle"> 
+<div class="name"> 
+<h5>Kitty coffe</h5> 
+</div>
+ <div class="price"><h1>R$5.90</h1>
+</div> 
+</div>
+ </div> 
+<div class="product"> 
+<img src="https://i.pinimg.com/564x/34/ea/99/34ea992e2bb86e8006f61a87dbf58dbf.jpg" alt="candy" /> 
+<div class="addbutton"> 
+<button class="addtocart">Adicione ao carrinho</button> 
+</div> 
+<div class="subtitle"> 
+<div class="name">
+ <h5>Kitty Candy</h5> 
+</div>
+ <div class="price"><h1>R$17.90</h1>
+</div> 
+</div> 
+</div> 
+<div class="product">
+<img src="https://i.pinimg.com/236x/65/f7/40/65f740835633ec2af489fa8f351817ac.jpg" alt="" /> 
+<div class="addbutton">
+ <button class="addtocart">Adicione ao carrinho</button> 
+</div>
+ <div class="subtitle"> 
+<div class="name"> 
+<h5>Kitty Cake</h5>
+ </div> 
+<div class="price"><h1>R$53.70 </h1>
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="products">
+ <div class="product">
+<img src="https://i.pinimg.com/236x/7f/d1/e8/7fd1e88ca93094d9be9130c9975fe3be.jpg" alt="" /> 
+<div class="addbutton">
+ <button class="addtocart">Adicione ao carrinho</button> 
+</div> 
+<div class="subtitle">
+ <div class="name"> 
+<h5>Panquecas Kitty</h5> 
+</div> 
+<div class="price"><h1>R$6.89</h1>
+</div> 
+</div>
+ </div> 
+<div class="product"> 
+<img src="https://i.pinimg.com/236x/26/30/f7/2630f73a288175731f80fe614419a347.jpg" alt="" /> 
+<div class="addbutton"> 
+<button class="addtocart">Adicione ao carrinho</button>
+ </div> <div class="subtitle"> 
+<div class="name"> 
+<h5>Donuts Kitty</h5> 
+</div> 
+<div class="price"><h1>R$5.90</h1>
+</div> 
+</div> 
+</div> 
+<div class="product">
+<img src="https://i.pinimg.com/236x/bd/8c/cc/bd8ccc4e827e76c5ee9ad92cc16f0ff7.jpg" alt="" /> 
+<div class="addbutton"> 
+<button class="addtocart">Adicione ao carrinho</button> 
+</div>
+ <div class="subtitle">
+ <div class="name"> 
+<h5>Kitty Macarons</h5> 
+</div> 
+<div class="price"><h1>R$4.80</h1>
+</div> 
+</div>
+ </div>
+ </div>
+ </div> 
+</div> 
+</body> 
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=MuseoModerno);
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "MuseoModerno";
+  display: flex;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  background: #FFE4F3;
+  border-radius: 0 30px 30px 0;
+  padding: 30px;
+}
+
+#mobile-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: -8888;
+}
+
+#mobile-menu:checked + .sidebar {
+  transform: translate(280px);
+  z-index: 1;
+}
+
+#mobile-menu:checked + .sidebar + #mmenu {
+  transform: translate(50px);
+  color: #fff;
+}
+
+#mobile-menu:checked + .sidebar + #mmenu i:first-child {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  top: -50%;
+}
+
+#mobile-menu:checked + .sidebar + #mmenu i:last-child {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: unset;
+}
+
+#mmenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+}
+
+#mmenu {
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  font-size: 22px;
+}
+
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.sidebar 
+.sidebar .logo h2 {
+  font-size: 24px;
+  padding: 4px;
+}
+
+.sidebar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.sidebar .menu ul li {
+  padding: 13px 15px;
+  padding-right: 30px;
+  letter-spacing: 0.05px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sidebar .menu ul li:first-child,
+.sidebar .menu ul li:hover:not(:last-child) {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.sidebar .menu ul li:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.sidebar .menu ul li  {
+  margin-right: 25px;
+}
+
+.content {
+  flex: 1;
+  padding: 35px 45px;
+  overflow-x: overlay;
+}
+
+.content .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .top .search {
+  position: relative;
+}
+
+.content .top .search input {
+  background: #FFE7F4;
+  padding: 10px 150px;
+  border-radius: 6px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+
+.content .categories {
+  width: 100%;
+  display: flex;
+}
+
+.content #heading {
+  padding-top: 30px;
+  color: #FFE9F3;
+}
+
+
+.content .categories .category img {
+  padding: 5px 15px;
+  float: right;
+  padding-bottom: 0;
+  opacity: 0.6;
+}
+
+.content .all-products {
+  width: 100%;
+}
+
+.content .all-products .title {
+  padding: 15px 0;
+  color: #FFD8EA;
+}
+
+.content .products {
+  width: 100%;
+  display: flex;
+}
+
+.content .product {
+  width: 33.3%;
+  position: relative;
+  margin: 5px 5px;
+  padding: 15px;
+  background: #FFE7F1;
+  text-align: center;
+}
+
+.content .product:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.content .product:hover .addbutton {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  left: 50%;
+}
+
+.addbutton {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.addbutton button {
+  padding: 5px 25px;
+  color: #fff;
+  border-radius: 5px;
+  background: #FFDFF0;
+}
+
+.content .product img {
+  padding: 10px;
+  width: 125px;
+  height: 130px;
+}
+
+.content .product i {
+  float: right;
+  color: #b5b4ba;
+}
+
+.content .product .subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .product .price h1 {
+  font-size: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -295px;
+  }
+
+  .content {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .sidebar + #mmenu {
+    transform: translate(50px);
+  }
+
+  .content .top {
+    flex-direction: column;
+  }
+
+  .content .search {
+    padding-bottom: 25px;
+  }
+
+  #mmenu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    color: #000;
+    position: relative;
+  }
+
+  .content .products {
+    display: block;
+  }
+
+  .content .product {
+    width: 100%;
+  }
+
+  .content .top .search input {
+    padding: 10px 45px;
+  }
+
+  .content .top .search i {
+    top: 16%;
+  }
+
+  .content .categories {
+    display: block;
+  }
+
+  .content .categories .category {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .content .categories .category img {
+    display: none;
+  }
+
+  .user {
+    display: flex;
+  }
+}
+</style>
